@@ -1,4 +1,17 @@
+Memo
+===================
+
+1- To build source code representation of the classes which are in folder "Dev/test/" :
+
+> ``` java -cp spoon-core-5.5.0-jar-with-dependencies.jar spoon.Launcher -i yourAbsolutePath/Dev/test/ --gui --noclasspath ```
+
+2 - To apply processor (compiled processor which was packed to jar file) to source application folder "Dev/bms_app" :  
+
+> ``` java -cp processor.jar:spoon-core-5.5.0-jar-with-dependencies.jar spoon.Launcher -i Dev/bms_app/ -p CatchProcessor --noclasspath
+```
+
 ## I - Trois manières pour transformer du code (Mechanisme d'intercession):
+
 * API intercession
 * Code Snippets
 * Template
