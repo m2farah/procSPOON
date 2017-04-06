@@ -1,5 +1,22 @@
+
+
 Memo
 ===================
+
+## PowerAPI CLI
+
+
+Utilisation du module ***procfs cpu simple*** de **PowerAPI** pour mésurer l'énergie. Pour sa configuration, il faut ajouter cette ligne dans `powerapi.cpu.tdp = 35` (pour ma machine, cf [ici][my_tdp]) dans le fichier de configuration de `conf/powerapi.conf`.
+
+#### Exemples d'utilisation
+Voici quelques exemples dans le repository de PowerAPI : [cliquer ici][exemples_d_utilisation].  
+
+#### Memo
+* Pour afficher le résultat en graphe. Il faut utiliser l'option `--chart` au lieu de `--console` lors de l'exécution de la commande `bin/powerapi`.
+
+<!-- Raccourcis vers des liens-->
+[my_tdp]:https://ark.intel.com/fr/products/53452/Intel-Core-i5-2450M-Processor-3M-Cache-up-to-3_10-GHz
+[exemples_d_utilisation]:https://github.com/Spirals-Team/powerapi/wiki/Example-of-usage-CLI
 
 1- To build source code representation of the classes which are in folder "Dev/test/" :
 
